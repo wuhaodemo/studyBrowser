@@ -1,6 +1,6 @@
 function UrlToPageShow(browser) {
   userInput(browser);
-  // resolve 里面的东西马上执行，resolve是.then的返回值,promise作用封装异步操作..
+  // resolve 里面的东西马上执行，resolve是.then的返回值,promise作用封装异步操作...
   const promiseUrlRes = Promise.resolve((resolve) =>
     setTimeout(resolve(urlRequest()), 0)
   );
